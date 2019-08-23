@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<head>
+  <!-- Copy this code -->
+  <title>Earth Initiative</title>
+  <!-- name of the website -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://i.ibb.co/hW8c7HS/Project-Logo.png">
+  <!-- this is the icon -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <!-- <script src="mm.js"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;
+    font-size: 20px;
+    color: #111;
+  }
+h6{
+  font-size: 10px;
+}
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: none(90%);
+    filter: none(90%); /* make all photos black and white */
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  section4{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #5cd65c;
+    width: 420px;
+    height: 1000px;
+    display: block;
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  section5{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #996633;
+    width: 420px;
+    height: 900px;
+    display: block;
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  section6{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ff8533;
+    width: 420px;
+    height: 770px;
+    display: block;
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  h2{
+    margin-top: 75px;
+    padding: 20px;
+  }
+  footer{
+    margin-top: 1200px;
+    background-color:#663300;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="Project_Logo.png" href = "info.html" alt="Logo" style="width:60px;height:60px; float: left; padding-top: 5px;">
+      <a class="navbar-brand" href="Home.html">Earth Initiative</a>
+      <h6 style = "padding-left: 60px;color:darkgrey;">Website for Earth Awareness</h6>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Land.html">Land</a></li>
+        <li><a href="Ocean.html">Ocean</a></li>
+        <li><a href="Help.html">Help</a></li>
+        <li><a href="Donate.html">Donate</a></li>
+        <li><a href="Info.html">Info</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Copy this code ^^^ -->
+<body>
+  <h2><center>The Land</center></h2>
+<div>
+  <section6>
+    <h3><center>The Future</center></h3>
+    <center><img src = "https://amp.businessinsider.com/images/51c2296169bedda02300001a-960-480.jpg" style: height = "250px" width = "375px"></center>
+    <p><center>"Our species caused 322 animal extinctions in the past 500 years, with two-thirds of those happening in the past two centuries (as of 2014)". These statistics are concerning for multiple reasons. Not only does it show a blatant disregard for the natural habitat and integrity of animals and nature, but it, combined with the human habit to introduce invasive species to foreign environments, shows a disturbing trend of the human love of "Playing God." If left unchecked, we will destroy our planet, and there will be nobody to blame but ourselves. At present, one of the more concerning dying species would have to be honeybees. Every species, no matter how insignificant or irritating they may seem to us, plays a critical role in the balance of the environment, and there's nothing we can do to fill that gap once those species are gone. If we keep going the way we're going, the planet is going to die, and it's going to take us with it.</center></p>
+  </section6>
+
+  <section5>
+    <h3><center>The Present</center></h3>
+    <center><img src = "https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/ElephantsGarbage750.jpg?itok=u9IANkqa" style: height = "250px:"></center>
+    <p><center>
+      Our time on earth has done some irreversible effects on the environment examples include: salinization, desertification, overhunting, overfishing, deforestation, and the accumulation of municipal waste in landfills.
+      At present, like with the ocean, we are at a critical point in the environment's destruction. Thousands of years after we began, we humans are still destroying the environment for our own gain. This includes but is not limited to poaching, air pollution, regular pollution, trash dumping, and forest clearing to make way for framland. By being so destructive with the environment (especially places like the rainforests, which we clear out acres and acres of for wood), we drive species out of their natural habitats and into our own. The leads us to think of them as a pure nuicance and subsequently drive them into extinction. There's also our love of animal products such as fur, claws, horns, teeth, etc., which is feuling the poaching industry. We have a bad habit of killing animals and just assuming there's an endless supply of them. Of course, this is financially motivated. Additionally, treating nature as our personal trash dump, as pictured above.</center></p>
+  </section5>
+
+  <section4>
+    <h3><center>The Past</center></h3>
+    <center><img src = "https://i2.wp.com/www.therelativeobserver.com/wp-content/uploads/2018/08/jungle.jpg?fit=1800%2C1200" style: height = "250px"></center>
+    <p><center>
+      In the past, life on Earth was thriving. Animals that lived in the deep sea eventually evolved and adapted to live on land. These land animals were able to adapt to their environment and evolve overtime. Life was flourishing with luscious greens from old growth forests and a rich amount of biodiversity.
+      Eventually humans began to roam the earth. In the beginning they lived a sustainable life, only taking what was necessary. However as the human population continued to grow at an exponential rate, they began finding loopholes to bypass the carrying capacity. Inventions and innovations made life easier and humans lived longer. As the human population boomed, the need for resouces also increased. This eventually led to the exploitation of the environment, an unsustainable way of life. <br>
+      Mostly beginning with the major empires of Europe and Asia, humans began to absolutely ravage the environment for all of the things that they desired. If that meant leveling a forest, so be it. If that meant polluting even their own air quality with coal dust and harmful greenhouse gasses, that was fine, too! It's all for the sake of advancement, so throughout history, our reckless trashing of the environment was justified in our minds. This began to become less acceptable as we realized that these actions had consequences.
+    </center></p>
+  </section4>
+</div>
+<footer>
+  <p>Sources:</p>
+  <p><a href="https://sites.psu.edu/siowfa15/2015/10/21/the-sixth-great-extinction/">Our Impact</a></p>
+</footer>
+
+</body>
+</html>
